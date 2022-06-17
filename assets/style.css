@@ -2,7 +2,7 @@
     --color1: rgb(117, 4, 117);
     --color2: rgb(199, 12, 199);
     --shColor: rgb(233, 224, 224);
-    --sh: 3px;
+    --sh: 10px;
     --margin: 10px;
     --borederColor: white;
 }
@@ -18,7 +18,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 1px 1px 1px 1px;
 
 }
 
@@ -26,8 +25,10 @@ main {
     border-style: dashed;
     border-color: var(--borederColor);
     height: 300px;
-    width: 350px;
-    margin: 10px 10px 10px 10px
+    width: 30%;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+    background: linear-gradient(var(--color1), var(--color2));
 }
 
 .cardHead {
@@ -37,57 +38,47 @@ main {
     padding-left: 5px;
     padding-right: 5px;
 }
-.cardBody {
-    background-color: blue;
-    display: block;
+pre {
+    background: linear-gradient(var(--color1), var(--color2));
+    margin-top: 0px;
+    padding: 15px;
+    white-space: pre-wrap;
+    user-select: all;
+    transition: font-size 1s 1s;
 }
 
 .idCard p {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-/*
-section .cardHead{
-    display: flex;
+    padding: 10px 10px 10px 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-section .cardBody {
-    display: flex;
-    flex-wrap: wrap;
+h1 {
+    color: var(--color2)
 }
 
-.cardHead p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+h2 {
+    color: var(--color2)
 }
 
-.idCard {
-    display: flex;
-    flex-wrap: wrap;
-    border-style: dashed;
-    border-color: var(--borederColor);
-    align-items: center;
-    width: 300px;
-    height: 300px;
+.idCard:hover{
+    box-shadow: var(--sh) var(--sh) var(--sh) white;
 }
 
-.cardHead h2 {
-    display: flex;
-    border-style: solid;
-    border-color: var(--borederColor);
-    z-index: 2;
-    align-items: center;
+pre:hover{
+    font-size: 20px;
 }
 
-.cardBody {
-    display: flex;
-    flex-wrap: wrap;
-    padding: auto;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 992px) {
+    .idCard{
+        width: 33%;
+    }
 }
-*/
+
+@media screen and (max-width: 768px){
+    .idCard{
+        width: 50%;
+    }
+}
