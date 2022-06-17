@@ -1,0 +1,79 @@
+:root {
+    --color1: rgb(117, 4, 117);
+    --color2: rgb(199, 12, 199);
+    --shColor: rgb(233, 224, 224);
+    --sh: 3px;
+    --margin: 10px;
+    --borederColor: white;
+}
+
+* {
+    background-color: rgb(88, 82, 82);
+    color: white;
+}
+header {
+   text-align: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1px 1px 1px 1px;
+
+}
+
+.idCard {
+    border-style: dashed;
+    border-color: var(--borederColor);
+    
+}
+
+.cardHead {
+    align-content: center;
+    border-style: solid;
+    border-color: var(--borederColor);
+}
+
+/*
+section .cardHead{
+    display: flex;
+}
+
+section .cardBody {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardHead p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.idCard {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: dashed;
+    border-color: var(--borederColor);
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.cardHead h2 {
+    display: flex;
+    border-style: solid;
+    border-color: var(--borederColor);
+    z-index: 2;
+    align-items: center;
+}
+
+.cardBody {
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+}
+*/
