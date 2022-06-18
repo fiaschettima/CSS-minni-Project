@@ -24,11 +24,10 @@ main {
 .idCard {
     border-style: dashed;
     border-color: var(--borederColor);
-    height: 300px;
+    height: fit-content;
     width: 30%;
     margin-top: var(--margin);
     margin-bottom: var(--margin);
-    background: linear-gradient(var(--color1), var(--color2));
 }
 
 .cardHead {
@@ -39,12 +38,15 @@ main {
     padding-right: 5px;
 }
 pre {
+    border: 2px solid black;
     background: linear-gradient(var(--color1), var(--color2));
-    margin-top: 0px;
+    margin: 5px 5px;
     padding: 15px;
     white-space: pre-wrap;
     user-select: all;
     transition: font-size 1s 1s;
+    max-width: 90%;
+    max-height: fit-content;
 }
 
 .idCard p {
